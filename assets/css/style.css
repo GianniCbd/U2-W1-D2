@@ -9,6 +9,63 @@ body {
   margin: 0;
 }
 
+#btn {
+  position: fixed;
+  padding: 25px;
+}
+#btn:nth-of-type(1) {
+  bottom: 5%;
+  right: 1%;
+}
+#btn:nth-of-type(2) {
+  bottom: 15%;
+  right: 1%;
+}
+#btn:nth-of-type(3) {
+  bottom: 25%;
+  right: 1%;
+}
+
+#btn .fa-calendar-alt {
+  position: absolute;
+  font-size: 2em;
+  color: #a02571;
+  background-color: white;
+  padding: 15px;
+}
+.fa-plus-square {
+  position: absolute;
+  inset: 25%;
+  font-size: 2em;
+}
+.fa-caret-square-up {
+  position: absolute;
+  inset: 25%;
+  font-size: 2em;
+}
+
+@media screen and (min-width: 700px) {
+  #btn {
+    position: fixed;
+    padding: 25px;
+  }
+  #btn:nth-of-type(1) {
+    top: 5%;
+    right: 1%;
+    bottom: 95%;
+  }
+  #btn:nth-of-type(2) {
+    top: 15%;
+    right: 1%;
+    bottom: 85%;
+  }
+  #btn:nth-of-type(3) {
+    top: 25%;
+    right: 1%;
+    bottom: 75%;
+  }
+}
+
 double-icons {
   position: fixed;
   left: 0;
@@ -37,38 +94,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 9;
-}
-
-a .fa-calendar-alt {
-  position: fixed;
-  color: #2556a0;
-  font-size: 30px;
-  bottom: 40%;
-  right: 0;
-  border: 1px transparent white;
-  background-color: white;
-  padding: 3px;
-}
-a .fa-plus-square {
-  position: fixed;
-  color: #2556a0;
-  font-size: 30px;
-  bottom: 30%;
-  right: 0;
-  border: 1px transparent white;
-  background-color: white;
-  padding: 3px;
-}
-
-a .fa-caret-square-up {
-  position: fixed;
-  color: purple;
-  font-size: 30px;
-  bottom: 20%;
-  right: 0;
-  border: 1px transparent white;
-  background-color: white;
-  padding: 3px;
 }
 
 @media screen and (min-width: 800px) {
